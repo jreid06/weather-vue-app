@@ -1,7 +1,8 @@
 # weather_app
 
 > A Vue.js project
-> View the project on github pages - https://jreid06.github.io/weather-vue-app/
+
+- View the project on github pages - https://jreid06.github.io/weather-vue-app/
 
 ## Build Setup
 
