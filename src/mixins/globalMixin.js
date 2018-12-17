@@ -15,7 +15,7 @@
 
        $.ajax({
          type: 'get',
-         url: `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${vm.$store.getters.getApiKey}&units=metric`,
+         url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${vm.$store.getters.getApiKey}&units=metric`,
          success: function (response) {
            console.log(response);
            vm.$store.commit("updateCity", vm.city.name);
@@ -36,7 +36,7 @@
 
        $.ajax({
          type: 'get',
-         url: `http://api.openweathermap.org/data/2.5/weather?zip=${pcode},${region}&APPID=${vm.$store.getters.getApiKey}&units=metric`,
+         url: `https://api.openweathermap.org/data/2.5/weather?zip=${pcode},${region}&APPID=${vm.$store.getters.getApiKey}&units=metric`,
          success: function (response) {
            console.log(response);
            vm.$store.commit("updatePostcode", {
